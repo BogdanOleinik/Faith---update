@@ -8,37 +8,44 @@
 import UIKit
 
 class SaintViewController: UICollectionViewController {
-
-    let namePhotos = ["everyDay", "morning", "evening", "ksenya", "matrona", "bogoroditsya", "chudotvorets", "radonejsky"]
     
-    var saints: [Saints]!
+    var saints = Saints.getSaints()
     
     let itemPerRow: CGFloat = 2
     let sectionInserts = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
     
-//    private let reuseIdentifier = "Cell"
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-
     }
-
-    // MARK: UICollectionViewDataSource
     
+    // MARK: UICollectionViewDataSource
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        namePhotos.count
+        saints.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "faithCell", for: indexPath) as! SaintCell
-        
-        let imageName = namePhotos[indexPath.item]
-        let image = UIImage(named: imageName)
-
-        cell.saintImage.image = image
+        cell.saintImage.image = saints[indexPath.item].image
         
         return cell
     }
+    // MARK: - Collection view delegate
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let saint = saints[indexPath.item]
+        performSegue(withIdentifier: "categoriesSegue", sender: saint)
+    }
+    
+    
+    
+    //MARK: - Navigation
+        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if segue.identifier == "categoriesSegue" {
+                guard let categoriesVC = segue.destination as? FaithViewController else { return }
+//                guard let indexPath = collectionView.indexPathsForSelectedItems else { return }
+//                let model = saints[indexPath]
+                categoriesVC.saints = sender as? Saints
+            }
+        }
 }
 
 extension SaintViewController: UICollectionViewDelegateFlowLayout {

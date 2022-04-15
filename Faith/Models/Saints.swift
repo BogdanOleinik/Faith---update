@@ -5,13 +5,17 @@
 //  Created by Олейник Богдан on 07.02.2022.
 //
 
+import UIKit
+
 struct Saints {
+    let image: UIImage!
     let name: String
     let prayers: [Prayers]
     
-    func getSaints() -> [Saints] {
+    static func getSaints() -> [Saints] {
         [
             Saints(
+                image: UIImage(named: "everyDay"),
                 name: "На каждый день",
                 prayers: [
                     Prayers(
@@ -35,6 +39,7 @@ struct Saints {
                 ]),
             
             Saints(
+                image: UIImage(named: "matrona"),
                 name: "Матрона Московская",
                 prayers: [
                     Prayers(
@@ -55,6 +60,7 @@ struct Saints {
                 ]),
             
             Saints(
+                image: UIImage(named: "bogoroditsya"),
                 name: "Пресвятая Богородица",
                 prayers: [
                     Prayers(
@@ -79,6 +85,7 @@ struct Saints {
             
             
             Saints(
+                image: UIImage(named: "chudotvorets"),
                 name: "Николай Чудотворец",
                 prayers: [
                     Prayers(
@@ -96,6 +103,7 @@ struct Saints {
                 ]),
             
             Saints(
+                image: UIImage(named: "ksenya"),
                 name: "Молитвы Ксении Петербургской",
                 prayers: [
                     Prayers(
@@ -111,6 +119,7 @@ struct Saints {
             
             
             Saints(
+                image: UIImage(named: "radonejsky"),
                 name: "Сергей Радонежский",
                 prayers: [
                     Prayers(

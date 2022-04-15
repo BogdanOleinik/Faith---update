@@ -8,7 +8,7 @@
 import UIKit
 
 class SaintCell: UICollectionViewCell {
-    
+
     @IBOutlet weak var saintImage: UIImageView!
     
 }

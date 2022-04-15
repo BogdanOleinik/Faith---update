@@ -9,7 +9,7 @@ import UIKit
 
 class FaithCell: UICollectionViewCell {
     
-    @IBOutlet weak var imageView: UIView!
-    @IBOutlet weak var faithName: UILabel!
+    @IBOutlet weak var imageCell: UIImageView!
+    @IBOutlet weak var nameCell: UILabel!
     
 }

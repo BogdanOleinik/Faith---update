@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kab-Bl-qlW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Kab-Bl-qlW">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -30,12 +30,6 @@
                                     <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5a6-Ze-M8y">
-                                            <rect key="frame" x="10" y="109" width="120" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aMu-s9-bNu">
                                             <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
                                         </imageView>
@@ -45,9 +39,6 @@
                                         <constraint firstItem="aMu-s9-bNu" firstAttribute="top" secondItem="t1F-Hs-vNj" secondAttribute="top" id="Dlk-TM-lZL"/>
                                         <constraint firstAttribute="bottom" secondItem="aMu-s9-bNu" secondAttribute="bottom" id="Qrb-ch-r6q"/>
                                         <constraint firstAttribute="trailing" secondItem="aMu-s9-bNu" secondAttribute="trailing" id="Qzt-J2-7y6"/>
-                                        <constraint firstAttribute="bottom" secondItem="5a6-Ze-M8y" secondAttribute="bottom" constant="10" id="giq-oS-eXH"/>
-                                        <constraint firstItem="5a6-Ze-M8y" firstAttribute="leading" secondItem="t1F-Hs-vNj" secondAttribute="leading" constant="10" id="jQP-dL-5fI"/>
-                                        <constraint firstAttribute="trailing" secondItem="5a6-Ze-M8y" secondAttribute="trailing" constant="10" id="reF-wN-RQq"/>
                                     </constraints>
                                 </collectionViewCellContentView>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -59,7 +50,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="saintImage" destination="aMu-s9-bNu" id="5O6-Kh-cXl"/>
-                                    <segue destination="149-Bs-gng" kind="show" identifier="categoriesSegue" id="Xdt-ax-UUe"/>
+                                    <segue destination="149-Bs-gng" kind="show" identifier="categoriesSegue" id="aCz-HS-K4e"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -89,7 +80,7 @@
                             <inset key="sectionInset" minX="22" minY="30" maxX="22" maxY="10"/>
                         </collectionViewFlowLayout>
                         <cells>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="faithCell" id="ehE-1A-kMq" customClass="FaithCell" customModule="Faith" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="categoriesCell" id="ehE-1A-kMq" customClass="FaithCell" customModule="Faith" customModuleProvider="target">
                                 <rect key="frame" x="22" y="30" width="140" height="140"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="rZc-LO-hb5">
@@ -124,9 +115,9 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <outlet property="faithName" destination="GdO-f9-V0l" id="9jv-Wg-2Sa"/>
-                                    <outlet property="imageView" destination="rZc-LO-hb5" id="NG5-Sq-75N"/>
-                                    <segue destination="l8Q-AB-0gj" kind="presentation" id="5ab-rj-s45"/>
+                                    <outlet property="imageCell" destination="yRO-T9-J8J" id="0hQ-qz-pjB"/>
+                                    <outlet property="nameCell" destination="GdO-f9-V0l" id="5J4-wa-8u3"/>
+                                    <segue destination="l8Q-AB-0gj" kind="presentation" id="Q7I-tj-N9T"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -139,7 +130,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5qy-ZJ-NvG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3523.1884057971015" y="1500.6696428571429"/>
+            <point key="canvasLocation" x="3525" y="1501"/>
         </scene>
         <!--Faith View Controller-->
         <scene sceneID="U4X-g5-WIF">
@@ -150,19 +141,19 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название молитвы" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KVa-BJ-e76">
-                                <rect key="frame" x="20" y="30" width="254.5" height="33.5"/>
+                                <rect key="frame" x="20" y="74" width="254.5" height="33.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="28"/>
                                 <color key="textColor" red="0.99607843139999996" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Молитва" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ku-Bl-gdG">
-                                <rect key="frame" x="20" y="99" width="374" height="20.5"/>
+                                <rect key="frame" x="20" y="143" width="374" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.99607843137254903" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qxE-bT-RJc">
-                                <rect key="frame" x="352" y="27" width="42" height="42"/>
+                                <rect key="frame" x="352" y="71" width="42" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="42" id="4oX-kU-es5"/>
                                     <constraint firstAttribute="height" constant="42" id="erd-kc-Xyi"/>
@@ -188,6 +179,7 @@
                             <constraint firstItem="4Ku-Bl-gdG" firstAttribute="top" secondItem="qxE-bT-RJc" secondAttribute="bottom" constant="30" id="en3-ua-5hW"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="zXx-sS-ea8"/>
                     <connections>
                         <outlet property="faith" destination="4Ku-Bl-gdG" id="ezg-gy-nvd"/>
                         <outlet property="titleFaith" destination="KVa-BJ-e76" id="i92-pW-X8T"/>
@@ -195,7 +187,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Un5-Lo-IH5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4224.6376811594209" y="1500.6696428571429"/>
+            <point key="canvasLocation" x="4261" y="1501"/>
         </scene>
         <!--Молитвы-->
         <scene sceneID="y9b-yC-DAg">
@@ -231,6 +223,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Kab-Bl-qlW" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="Bcw-Ca-xmG">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" red="0.043137254899999998" green="0.047058823530000002" blue="0.054901960780000002" alpha="1" colorSpace="calibratedRGB"/>
                         <color key="barTintColor" red="0.043137254901960784" green="0.047058823529411764" blue="0.054901960784313725" alpha="1" colorSpace="calibratedRGB"/>
