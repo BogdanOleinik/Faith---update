@@ -9,17 +9,18 @@ import UIKit
 
 class FaithViewController: UIViewController {
 
+    var prayers: Prayers!
+    
     @IBOutlet weak var titleFaith: UILabel!
     @IBOutlet weak var faith: UILabel!
-    
-    var titleT = ""
-    var faithName = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        titleFaith.text = "\(titleT)"
-        faith.text = "\(faithName)"
-        
+        titleFaith.text = prayers.name
+        faith.text = prayers.completed
+    }
+    @IBAction func cancelButton() {
+        dismiss(animated: true)
     }
 }

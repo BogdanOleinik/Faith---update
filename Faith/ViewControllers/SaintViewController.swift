@@ -18,7 +18,7 @@ class SaintViewController: UICollectionViewController {
         super.viewDidLoad()
     }
     
-    // MARK: UICollectionViewDataSource
+    // MARK: - UICollectionViewDataSource
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         saints.count
     }
@@ -29,25 +29,23 @@ class SaintViewController: UICollectionViewController {
         
         return cell
     }
+    
     // MARK: - Collection view delegate
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let saint = saints[indexPath.item]
         performSegue(withIdentifier: "categoriesSegue", sender: saint)
     }
     
-    
-    
-    //MARK: - Navigation
-        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-            if segue.identifier == "categoriesSegue" {
-                guard let categoriesVC = segue.destination as? FaithViewController else { return }
-//                guard let indexPath = collectionView.indexPathsForSelectedItems else { return }
-//                let model = saints[indexPath]
-                categoriesVC.saints = sender as? Saints
-            }
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "categoriesSegue" {
+            guard let categoriesVC = segue.destination as? CategoriesViewController else { return }
+            categoriesVC.saints = sender as? Saints
         }
+    }
 }
 
+// MARK: - Collection size
 extension SaintViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {

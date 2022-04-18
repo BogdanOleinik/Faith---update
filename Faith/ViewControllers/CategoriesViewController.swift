@@ -23,16 +23,28 @@ class CategoriesViewController: UICollectionViewController {
 
     // MARK: UICollectionViewDataSource
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        saints.count
-        2
+        saints.prayers.count
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "categoriesCell", for: indexPath) as! FaithCell
-        cell.nameCell.text = name
-        cell.imageCell.image = image
+        cell.imageCell.image = UIImage(named: saints.prayers[indexPath.item].topic)
         
         return cell
+    }
+    
+    // MARK: - Collection view delegate
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let prayer = saints.prayers[indexPath.item]
+        performSegue(withIdentifier: "faithSugue", sender: prayer)
+    }
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "faithSugue" {
+            guard let categoriesVC = segue.destination as? FaithViewController else { return }
+            categoriesVC.prayers = sender as? Prayers
+        }
     }
 }
 
