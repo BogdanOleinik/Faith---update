@@ -7,6 +7,11 @@
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="Leto Text Sans Defect.otf">
+            <string>LetoTextSansDefect</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Молитвы-->
         <scene sceneID="ytr-59-ttX">
@@ -65,7 +70,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="I1G-6s-isv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2789.8550724637685" y="1501.3392857142856"/>
+            <point key="canvasLocation" x="2761.875" y="1500"/>
         </scene>
         <!--Categories View Controller-->
         <scene sceneID="3Hd-DE-Wgu">
@@ -92,12 +97,21 @@
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yRO-T9-J8J">
                                             <rect key="frame" x="0.0" y="0.0" width="140" height="140"/>
                                         </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Название" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h83-vE-gVf">
+                                            <rect key="frame" x="15" y="110" width="110" height="15"/>
+                                            <fontDescription key="fontDescription" name="LetoTextSansDefect" family="Leto Text Sans Defect" pointSize="15"/>
+                                            <color key="textColor" red="0.98431372640000003" green="0.98431372640000003" blue="0.98823523520000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="h83-vE-gVf" firstAttribute="leading" secondItem="rZc-LO-hb5" secondAttribute="leading" constant="15" id="D32-RK-4wG"/>
                                         <constraint firstItem="yRO-T9-J8J" firstAttribute="top" secondItem="rZc-LO-hb5" secondAttribute="top" id="Jy3-m8-g68"/>
                                         <constraint firstItem="yRO-T9-J8J" firstAttribute="leading" secondItem="rZc-LO-hb5" secondAttribute="leading" id="XGX-Ev-5DJ"/>
                                         <constraint firstAttribute="trailing" secondItem="yRO-T9-J8J" secondAttribute="trailing" id="kSZ-UY-c77"/>
                                         <constraint firstAttribute="bottom" secondItem="yRO-T9-J8J" secondAttribute="bottom" id="kee-fK-Viw"/>
+                                        <constraint firstAttribute="trailing" secondItem="h83-vE-gVf" secondAttribute="trailing" constant="15" id="nBp-uD-fx4"/>
+                                        <constraint firstAttribute="bottom" secondItem="h83-vE-gVf" secondAttribute="bottom" constant="15" id="nfA-kL-r6H"/>
                                     </constraints>
                                 </collectionViewCellContentView>
                                 <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -109,6 +123,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="imageCell" destination="yRO-T9-J8J" id="0hQ-qz-pjB"/>
+                                    <outlet property="textFaith" destination="h83-vE-gVf" id="RTM-wi-0Nl"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>
@@ -124,7 +139,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5qy-ZJ-NvG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3524.6376811594205" y="1500.6696428571429"/>
+            <point key="canvasLocation" x="3469" y="1500"/>
         </scene>
         <!--Faith View Controller-->
         <scene sceneID="U4X-g5-WIF">
@@ -184,7 +199,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Un5-Lo-IH5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4260.8695652173919" y="1500.6696428571429"/>
+            <point key="canvasLocation" x="4174" y="1500"/>
         </scene>
         <!--Молитвы-->
         <scene sceneID="y9b-yC-DAg">
@@ -197,9 +212,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" largeTitles="YES" id="MsT-85-cmb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="91"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="barTintColor" red="0.043137254899999998" green="0.047058823530000002" blue="0.054901960780000002" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="textColor" red="0.98431372640000003" green="0.98431372640000003" blue="0.98823523520000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </textAttributes>
                         <textAttributes key="largeTitleTextAttributes">
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -232,7 +248,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jVk-8F-9lO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1078" y="1877"/>
+            <point key="canvasLocation" x="1239" y="1892"/>
         </scene>
     </scenes>
     <resources>

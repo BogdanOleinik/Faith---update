@@ -28,6 +28,7 @@ class CategoriesViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "categoriesCell", for: indexPath) as! FaithCell
+        cell.textFaith.text = saints.prayers[indexPath.item].name
         cell.imageCell.image = UIImage(named: saints.prayers[indexPath.item].topic)
         
         return cell

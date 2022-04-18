@@ -20,28 +20,88 @@ struct Saints {
                 prayers: [
                     Prayers(
                         name: "Отче наш",
-                        topic: "other",
+                        topic: "otche",
                         completed: DataManagerMain.shared.otcheNash),
                     Prayers(
                         name: "Символ веры",
-                        topic: "other",
+                        topic: "symbol",
                         completed: DataManagerMain.shared.symbolVeri),
                     Prayers(
                         name: "Лука Войно-Ясеневский, об исцелении",
-                        topic: "other",
+                        topic: "yasen",
                         completed: DataManagerMain.shared.lukaVoynoYasnevsky),
                     Prayers(
                         name: "Молитва Божьей Матери",
-                        topic: "other",
+                        topic: "help2",
                         completed: DataManagerMain.shared.bojyaMater),
                     Prayers(
                         name: "Молитва Троице",
-                        topic: "other",
+                        topic: "help3",
                         completed: DataManagerMain.shared.troitsya),
                     Prayers(
                         name: "Георгий Победоносец",
-                        topic: "other",
+                        topic: "help",
                         completed: DataManagerMain.shared.georgiyPobedonos)
+                ]),
+            
+            Saints(
+                image: UIImage(named: "morning"),
+                name: "Утренние молитвы",
+                prayers: [
+                    Prayers(
+                        name: "Молитва о помощи",
+                        topic: "help",
+                        completed: DataManagerMorning.shared.pomosh),
+                    Prayers(
+                        name: "Молитва о здравии",
+                        topic: "health",
+                        completed: DataManagerMorning.shared.zdravie),
+                    Prayers(
+                        name: "О женском счастье и замужестве",
+                        topic: "woman",
+                        completed: DataManagerMorning.shared.zhensoe),
+                    Prayers(
+                        name: "Молитва вторая Серафиму Саровскому",
+                        topic: "help7",
+                        completed: DataManagerMorning.shared.savafim),
+                    Prayers(
+                        name: "Молитва, святого Василия Великого",
+                        topic: "help1",
+                        completed: DataManagerMorning.shared.vasiliy),
+                    Prayers(
+                        name: "Отче наш",
+                        topic: "otche",
+                        completed: DataManagerMain.shared.otcheNash),
+                    Prayers(
+                        name: "Символ веры",
+                        topic: "symbol",
+                        completed: DataManagerMain.shared.symbolVeri)
+                ]),
+            
+            Saints(
+                image: UIImage(named: "evening"),
+                name: "Вечерние молитвы",
+                prayers: [
+                    Prayers(
+                        name: "Молитва святого Макария Великого",
+                        topic: "help2",
+                        completed: DataManagerEvening.shared.makariy),
+                    Prayers(
+                        name: "Молитва ко Пресвятой Богородице, Петра Студийского",
+                        topic: "bogoroditsya1",
+                        completed: DataManagerEvening.shared.bogoroditsy),
+                    Prayers(
+                        name: "Молитва ко святому Ангелу хранителю",
+                        topic: "help",
+                        completed: DataManagerEvening.shared.anjel),
+                    Prayers(
+                        name: "Молитва",
+                        topic: "help1",
+                        completed: DataManagerEvening.shared.molitva),
+                    Prayers(
+                        name: "Исповедание грехов повседневное",
+                        topic: "help3",
+                        completed: DataManagerEvening.shared.ispoved)
                 ]),
             
             Saints(
@@ -49,19 +109,19 @@ struct Saints {
                 name: "Матрона Московская",
                 prayers: [
                     Prayers(
-                        name: "Молитва Матроне Московской о семье",
+                        name: "О семье",
                         topic: "family",
                         completed: DataManagerMatrona.shared.prayerFamily),
                     Prayers(
-                        name: "Молитва Матроне Московской об исцелении от болезни",
+                        name: "Об исцелении от болезни",
                         topic: "health",
                         completed: DataManagerMatrona.shared.prayerHealth),
                     Prayers(
-                        name: "Молитва Матроне Московской о беременности, о зачатии ребенка",
+                        name: "О беременности, о зачатии ребенка",
                         topic: "child",
                         completed: DataManagerMatrona.shared.prayersChild),
                     Prayers(
-                        name: "Молитва святой Матроне Московской о даровании работы",
+                        name: "О даровании работы",
                         topic: "work",
                         completed: DataManagerMatrona.shared.prayersWork),
                     Prayers(
@@ -76,7 +136,7 @@ struct Saints {
                 prayers: [
                     Prayers(
                         name: "Молитва богородице",
-                        topic: "other",
+                        topic: "help2",
                         completed: DataManagerBogoroditsya.shared.bogoroditsya),
                     Prayers(
                         name: "О семье",

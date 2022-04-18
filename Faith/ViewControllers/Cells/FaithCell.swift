@@ -10,6 +10,6 @@ import UIKit
 class FaithCell: UICollectionViewCell {
     
     @IBOutlet weak var imageCell: UIImageView!
-    @IBOutlet weak var nameCell: UILabel!
+    @IBOutlet weak var textFaith: UILabel!
     
 }

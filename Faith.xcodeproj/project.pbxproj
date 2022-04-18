@@ -15,6 +15,7 @@
 		9C0893F027B0422300769835 /* SaintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0893EF27B0422200769835 /* SaintViewController.swift */; };
 		9C0893FC27B16BCD00769835 /* Saints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0893FB27B16BCD00769835 /* Saints.swift */; };
 		9C0893FE27B16C3A00769835 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0893FD27B16C3A00769835 /* DataManager.swift */; };
+		9C35BB1D280D81DF00B7C087 /* Leto Text Sans Defect.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9C35BB1C280D81DF00B7C087 /* Leto Text Sans Defect.otf */; };
 		9C49C46327D7B9BF009F3080 /* SaintCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C49C46227D7B9BF009F3080 /* SaintCell.swift */; };
 		9C49C46527D8B496009F3080 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C49C46427D8B496009F3080 /* CategoriesViewController.swift */; };
 		9C49C46927D8C3B6009F3080 /* FaithViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C49C46827D8C3B6009F3080 /* FaithViewController.swift */; };
@@ -32,6 +33,7 @@
 		9C0893EF27B0422200769835 /* SaintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaintViewController.swift; sourceTree = "<group>"; };
 		9C0893FB27B16BCD00769835 /* Saints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Saints.swift; sourceTree = "<group>"; };
 		9C0893FD27B16C3A00769835 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		9C35BB1C280D81DF00B7C087 /* Leto Text Sans Defect.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Leto Text Sans Defect.otf"; sourceTree = "<group>"; };
 		9C49C46227D7B9BF009F3080 /* SaintCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaintCell.swift; sourceTree = "<group>"; };
 		9C49C46427D8B496009F3080 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		9C49C46827D8C3B6009F3080 /* FaithViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaithViewController.swift; sourceTree = "<group>"; };
@@ -68,14 +70,31 @@
 		9C0893DA27B036E500769835 /* Faith */ = {
 			isa = PBXGroup;
 			children = (
-				9C0893FD27B16C3A00769835 /* DataManager.swift */,
-				9C49C45B27D79C1C009F3080 /* Models */,
 				9C49C45C27D79C92009F3080 /* ViewControllers */,
 				9C49C45F27D79CD8009F3080 /* Storyboards */,
+				9C49C45B27D79C1C009F3080 /* Models */,
+				9C35BB1A280D6D2D00B7C087 /* Services */,
 				9C49C45D27D79CB0009F3080 /* App */,
 				9C49C45E27D79CC4009F3080 /* Resources */,
 			);
 			path = Faith;
+			sourceTree = "<group>";
+		};
+		9C35BB1A280D6D2D00B7C087 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9C0893FD27B16C3A00769835 /* DataManager.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		9C35BB1B280D6D4E00B7C087 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9C49C46227D7B9BF009F3080 /* SaintCell.swift */,
+				9C49C46C27D8D869009F3080 /* FaithCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		9C49C45B27D79C1C009F3080 /* Models */ = {
@@ -92,8 +111,7 @@
 				9C0893EF27B0422200769835 /* SaintViewController.swift */,
 				9C49C46427D8B496009F3080 /* CategoriesViewController.swift */,
 				9C49C46827D8C3B6009F3080 /* FaithViewController.swift */,
-				9C49C46227D7B9BF009F3080 /* SaintCell.swift */,
-				9C49C46C27D8D869009F3080 /* FaithCell.swift */,
+				9C35BB1B280D6D4E00B7C087 /* Cells */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -111,6 +129,7 @@
 		9C49C45E27D79CC4009F3080 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				9C35BB1C280D81DF00B7C087 /* Leto Text Sans Defect.otf */,
 				9C0893E427B036E600769835 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -184,6 +203,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C0893E827B036E600769835 /* LaunchScreen.storyboard in Resources */,
+				9C35BB1D280D81DF00B7C087 /* Leto Text Sans Defect.otf in Resources */,
 				9C0893E527B036E600769835 /* Assets.xcassets in Resources */,
 				9C0893E327B036E500769835 /* Main.storyboard in Resources */,
 			);
