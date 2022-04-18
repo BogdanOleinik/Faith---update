@@ -20,6 +20,7 @@
 		9C49C46527D8B496009F3080 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C49C46427D8B496009F3080 /* CategoriesViewController.swift */; };
 		9C49C46927D8C3B6009F3080 /* FaithViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C49C46827D8C3B6009F3080 /* FaithViewController.swift */; };
 		9C49C46D27D8D869009F3080 /* FaithCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C49C46C27D8D869009F3080 /* FaithCell.swift */; };
+		9CB7C072280D9B1400065574 /* HolidaysTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB7C071280D9B1400065574 /* HolidaysTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		9C49C46427D8B496009F3080 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		9C49C46827D8C3B6009F3080 /* FaithViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaithViewController.swift; sourceTree = "<group>"; };
 		9C49C46C27D8D869009F3080 /* FaithCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaithCell.swift; sourceTree = "<group>"; };
+		9CB7C071280D9B1400065574 /* HolidaysTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidaysTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				9C0893EF27B0422200769835 /* SaintViewController.swift */,
 				9C49C46427D8B496009F3080 /* CategoriesViewController.swift */,
 				9C49C46827D8C3B6009F3080 /* FaithViewController.swift */,
+				9CB7C071280D9B1400065574 /* HolidaysTableViewController.swift */,
 				9C35BB1B280D6D4E00B7C087 /* Cells */,
 			);
 			path = ViewControllers;
@@ -218,6 +221,7 @@
 			files = (
 				9C0893F027B0422300769835 /* SaintViewController.swift in Sources */,
 				9C0893DC27B036E500769835 /* AppDelegate.swift in Sources */,
+				9CB7C072280D9B1400065574 /* HolidaysTableViewController.swift in Sources */,
 				9C0893DE27B036E500769835 /* SceneDelegate.swift in Sources */,
 				9C0893FE27B16C3A00769835 /* DataManager.swift in Sources */,
 				9C0893FC27B16BCD00769835 /* Saints.swift in Sources */,

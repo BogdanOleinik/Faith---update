@@ -49,6 +49,7 @@ class CategoriesViewController: UICollectionViewController {
     }
 }
 
+// MARK: - Collection size
 extension CategoriesViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let paddingWidth = sectionInserts.left * (itemPerRow + 1)

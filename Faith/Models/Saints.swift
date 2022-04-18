@@ -99,35 +99,9 @@ struct Saints {
                         topic: "help1",
                         completed: DataManagerEvening.shared.molitva),
                     Prayers(
-                        name: "Исповедание грехов повседневное",
+                        name: "Исповедание грехов",
                         topic: "help3",
                         completed: DataManagerEvening.shared.ispoved)
-                ]),
-            
-            Saints(
-                image: UIImage(named: "matrona"),
-                name: "Матрона Московская",
-                prayers: [
-                    Prayers(
-                        name: "О семье",
-                        topic: "family",
-                        completed: DataManagerMatrona.shared.prayerFamily),
-                    Prayers(
-                        name: "Об исцелении от болезни",
-                        topic: "health",
-                        completed: DataManagerMatrona.shared.prayerHealth),
-                    Prayers(
-                        name: "О беременности, о зачатии ребенка",
-                        topic: "child",
-                        completed: DataManagerMatrona.shared.prayersChild),
-                    Prayers(
-                        name: "О даровании работы",
-                        topic: "work",
-                        completed: DataManagerMatrona.shared.prayersWork),
-                    Prayers(
-                        name: "Сдача экзаменов",
-                        topic: "study",
-                        completed: DataManagerMatrona.shared.prayersStudy)
                 ]),
             
             Saints(
@@ -160,6 +134,31 @@ struct Saints {
                         completed: DataManagerBogoroditsya.shared.inRoad)
                 ]),
             
+            Saints(
+                image: UIImage(named: "matrona"),
+                name: "Матрона Московская",
+                prayers: [
+                    Prayers(
+                        name: "О семье",
+                        topic: "family",
+                        completed: DataManagerMatrona.shared.prayerFamily),
+                    Prayers(
+                        name: "Об исцелении от болезни",
+                        topic: "health",
+                        completed: DataManagerMatrona.shared.prayerHealth),
+                    Prayers(
+                        name: "О беременности, о зачатии ребенка",
+                        topic: "child",
+                        completed: DataManagerMatrona.shared.prayersChild),
+                    Prayers(
+                        name: "О даровании работы",
+                        topic: "work",
+                        completed: DataManagerMatrona.shared.prayersWork),
+                    Prayers(
+                        name: "Сдача экзаменов",
+                        topic: "study",
+                        completed: DataManagerMatrona.shared.prayersStudy)
+                ]),
             
             Saints(
                 image: UIImage(named: "chudotvorets"),
@@ -184,6 +183,20 @@ struct Saints {
                 ]),
             
             Saints(
+                image: UIImage(named: "radonejsky"),
+                name: "Сергей Радонежский",
+                prayers: [
+                    Prayers(
+                        name: "Молитва об исцелении",
+                        topic: "health",
+                        completed: DataManagerSergeyRadonejsky.shared.prayerHealth),
+                    Prayers(
+                        name: "О учебе",
+                        topic: "study",
+                        completed: DataManagerSergeyRadonejsky.shared.prayersStudy)
+                ]),
+            
+            Saints(
                 image: UIImage(named: "ksenya"),
                 name: "Молитвы Ксении Петербургской",
                 prayers: [
@@ -199,21 +212,6 @@ struct Saints {
                         name: "Молитва о работе",
                         topic: "work",
                         completed: DataManagerKsenya.shared.prayersWork)
-                ]),
-            
-            
-            Saints(
-                image: UIImage(named: "radonejsky"),
-                name: "Сергей Радонежский",
-                prayers: [
-                    Prayers(
-                        name: "Молитва об исцелении",
-                        topic: "health",
-                        completed: DataManagerSergeyRadonejsky.shared.prayerHealth),
-                    Prayers(
-                        name: "О учебе",
-                        topic: "study",
-                        completed: DataManagerSergeyRadonejsky.shared.prayersStudy)
                 ])
         ]
     }
