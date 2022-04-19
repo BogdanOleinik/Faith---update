@@ -14,12 +14,15 @@
 		9C0893E827B036E600769835 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C0893E627B036E600769835 /* LaunchScreen.storyboard */; };
 		9C0893F027B0422300769835 /* SaintViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0893EF27B0422200769835 /* SaintViewController.swift */; };
 		9C0893FC27B16BCD00769835 /* Saints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0893FB27B16BCD00769835 /* Saints.swift */; };
-		9C0893FE27B16C3A00769835 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0893FD27B16C3A00769835 /* DataManager.swift */; };
+		9C0893FE27B16C3A00769835 /* DataManagerFaith.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0893FD27B16C3A00769835 /* DataManagerFaith.swift */; };
 		9C35BB1D280D81DF00B7C087 /* Leto Text Sans Defect.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9C35BB1C280D81DF00B7C087 /* Leto Text Sans Defect.otf */; };
 		9C49C46327D7B9BF009F3080 /* SaintCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C49C46227D7B9BF009F3080 /* SaintCell.swift */; };
 		9C49C46527D8B496009F3080 /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C49C46427D8B496009F3080 /* CategoriesViewController.swift */; };
 		9C49C46927D8C3B6009F3080 /* FaithViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C49C46827D8C3B6009F3080 /* FaithViewController.swift */; };
 		9C49C46D27D8D869009F3080 /* FaithCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C49C46C27D8D869009F3080 /* FaithCell.swift */; };
+		9C9571DD280EBE6900909563 /* DataManagerHolidays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9571DC280EBE6900909563 /* DataManagerHolidays.swift */; };
+		9C9571DF280EBE7C00909563 /* Holidays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9571DE280EBE7C00909563 /* Holidays.swift */; };
+		9C9571E3280ED04600909563 /* HolidayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9571E2280ED04600909563 /* HolidayTableViewCell.swift */; };
 		9CB7C072280D9B1400065574 /* HolidaysTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB7C071280D9B1400065574 /* HolidaysTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,12 +36,15 @@
 		9C0893E927B036E600769835 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9C0893EF27B0422200769835 /* SaintViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaintViewController.swift; sourceTree = "<group>"; };
 		9C0893FB27B16BCD00769835 /* Saints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Saints.swift; sourceTree = "<group>"; };
-		9C0893FD27B16C3A00769835 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		9C0893FD27B16C3A00769835 /* DataManagerFaith.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerFaith.swift; sourceTree = "<group>"; };
 		9C35BB1C280D81DF00B7C087 /* Leto Text Sans Defect.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Leto Text Sans Defect.otf"; sourceTree = "<group>"; };
 		9C49C46227D7B9BF009F3080 /* SaintCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaintCell.swift; sourceTree = "<group>"; };
 		9C49C46427D8B496009F3080 /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		9C49C46827D8C3B6009F3080 /* FaithViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaithViewController.swift; sourceTree = "<group>"; };
 		9C49C46C27D8D869009F3080 /* FaithCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FaithCell.swift; sourceTree = "<group>"; };
+		9C9571DC280EBE6900909563 /* DataManagerHolidays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerHolidays.swift; sourceTree = "<group>"; };
+		9C9571DE280EBE7C00909563 /* Holidays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Holidays.swift; sourceTree = "<group>"; };
+		9C9571E2280ED04600909563 /* HolidayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayTableViewCell.swift; sourceTree = "<group>"; };
 		9CB7C071280D9B1400065574 /* HolidaysTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidaysTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,7 +91,8 @@
 		9C35BB1A280D6D2D00B7C087 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				9C0893FD27B16C3A00769835 /* DataManager.swift */,
+				9C0893FD27B16C3A00769835 /* DataManagerFaith.swift */,
+				9C9571DC280EBE6900909563 /* DataManagerHolidays.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -95,6 +102,7 @@
 			children = (
 				9C49C46227D7B9BF009F3080 /* SaintCell.swift */,
 				9C49C46C27D8D869009F3080 /* FaithCell.swift */,
+				9C9571E2280ED04600909563 /* HolidayTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -103,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				9C0893FB27B16BCD00769835 /* Saints.swift */,
+				9C9571DE280EBE7C00909563 /* Holidays.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -219,15 +228,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C9571DD280EBE6900909563 /* DataManagerHolidays.swift in Sources */,
 				9C0893F027B0422300769835 /* SaintViewController.swift in Sources */,
 				9C0893DC27B036E500769835 /* AppDelegate.swift in Sources */,
 				9CB7C072280D9B1400065574 /* HolidaysTableViewController.swift in Sources */,
 				9C0893DE27B036E500769835 /* SceneDelegate.swift in Sources */,
-				9C0893FE27B16C3A00769835 /* DataManager.swift in Sources */,
+				9C0893FE27B16C3A00769835 /* DataManagerFaith.swift in Sources */,
 				9C0893FC27B16BCD00769835 /* Saints.swift in Sources */,
+				9C9571E3280ED04600909563 /* HolidayTableViewCell.swift in Sources */,
 				9C49C46D27D8D869009F3080 /* FaithCell.swift in Sources */,
 				9C49C46527D8B496009F3080 /* CategoriesViewController.swift in Sources */,
 				9C49C46327D7B9BF009F3080 /* SaintCell.swift in Sources */,
+				9C9571DF280EBE7C00909563 /* Holidays.swift in Sources */,
 				9C49C46927D8C3B6009F3080 /* FaithViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
