@@ -31,7 +31,18 @@ class HolidaysTableViewController: UITableViewController {
         
         return cell
     }
+    
+    // MARK: - Table view delegate
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let holiday = holidays[indexPath.row]
+        performSegue(withIdentifier: "showHoliday", sender: holiday)
+    }
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let holidayVC = segue.destination as? DescriptionViewController else { return }
+        holidayVC.holiday = sender as? Holidays
+    }
 }
 
-    // MARK: - Table view delegate
-
+    

@@ -11,7 +11,10 @@ class HolidayTableViewCell: UITableViewCell {
 
     @IBOutlet weak var imageHoliday: UIImageView! {
         didSet {
+            imageHoliday.contentMode = .scaleAspectFill
+            imageHoliday.clipsToBounds = true
             imageHoliday.layer.cornerRadius = imageHoliday.frame.height / 2
+            imageHoliday.backgroundColor = .white
         }
     }
     @IBOutlet weak var titleHoliday: UILabel!

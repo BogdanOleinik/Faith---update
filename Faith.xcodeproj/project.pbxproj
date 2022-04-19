@@ -23,6 +23,7 @@
 		9C9571DD280EBE6900909563 /* DataManagerHolidays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9571DC280EBE6900909563 /* DataManagerHolidays.swift */; };
 		9C9571DF280EBE7C00909563 /* Holidays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9571DE280EBE7C00909563 /* Holidays.swift */; };
 		9C9571E3280ED04600909563 /* HolidayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9571E2280ED04600909563 /* HolidayTableViewCell.swift */; };
+		9C9571E5280EDC2E00909563 /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C9571E4280EDC2E00909563 /* DescriptionViewController.swift */; };
 		9CB7C072280D9B1400065574 /* HolidaysTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CB7C071280D9B1400065574 /* HolidaysTableViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +46,7 @@
 		9C9571DC280EBE6900909563 /* DataManagerHolidays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManagerHolidays.swift; sourceTree = "<group>"; };
 		9C9571DE280EBE7C00909563 /* Holidays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Holidays.swift; sourceTree = "<group>"; };
 		9C9571E2280ED04600909563 /* HolidayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidayTableViewCell.swift; sourceTree = "<group>"; };
+		9C9571E4280EDC2E00909563 /* DescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
 		9CB7C071280D9B1400065574 /* HolidaysTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolidaysTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -123,6 +125,7 @@
 				9C49C46427D8B496009F3080 /* CategoriesViewController.swift */,
 				9C49C46827D8C3B6009F3080 /* FaithViewController.swift */,
 				9CB7C071280D9B1400065574 /* HolidaysTableViewController.swift */,
+				9C9571E4280EDC2E00909563 /* DescriptionViewController.swift */,
 				9C35BB1B280D6D4E00B7C087 /* Cells */,
 			);
 			path = ViewControllers;
@@ -232,6 +235,7 @@
 				9C0893F027B0422300769835 /* SaintViewController.swift in Sources */,
 				9C0893DC27B036E500769835 /* AppDelegate.swift in Sources */,
 				9CB7C072280D9B1400065574 /* HolidaysTableViewController.swift in Sources */,
+				9C9571E5280EDC2E00909563 /* DescriptionViewController.swift in Sources */,
 				9C0893DE27B036E500769835 /* SceneDelegate.swift in Sources */,
 				9C0893FE27B16C3A00769835 /* DataManagerFaith.swift in Sources */,
 				9C0893FC27B16BCD00769835 /* Saints.swift in Sources */,
