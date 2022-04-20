@@ -9,10 +9,10 @@ import UIKit
 
 class SaintViewController: UICollectionViewController {
     
-    var saints = Saints.getSaints()
+    private var saints = Saints.getSaints()
     
-    let itemPerRow: CGFloat = 2
-    let sectionInserts = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+    private let itemPerRow: CGFloat = 2
+    private let sectionInserts = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
     
     override func viewDidLoad() {
         super.viewDidLoad()

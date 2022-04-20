@@ -13,8 +13,8 @@ class CategoriesViewController: UICollectionViewController {
     var name: String?
     var image: UIImage?
     
-    let itemPerRow: CGFloat = 2
-    let sectionInserts = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+    private let itemPerRow: CGFloat = 2
+    private let sectionInserts = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
     
     override func viewDidLoad() {
         super.viewDidLoad()
