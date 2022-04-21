@@ -34,6 +34,7 @@ class HolidaysTableViewController: UITableViewController {
     
     // MARK: - Table view delegate
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         let holiday = holidays[indexPath.row]
         performSegue(withIdentifier: "showHoliday", sender: holiday)
     }
@@ -44,5 +45,4 @@ class HolidaysTableViewController: UITableViewController {
         holidayVC.holiday = sender as? Holidays
     }
 }
-
     

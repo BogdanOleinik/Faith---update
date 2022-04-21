@@ -280,7 +280,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.043137259779999999" green="0.050980389119999997" blue="0.062745101750000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="holidayCell" rowHeight="70" id="U2u-Ly-hwF" customClass="HolidayTableViewCell" customModule="Faith" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="holidayCell" rowHeight="70" id="U2u-Ly-hwF" customClass="HolidayTableViewCell" customModule="Faith" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="44.666666030883789" width="428" height="70"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="U2u-Ly-hwF" id="Nh3-Tw-le8">
