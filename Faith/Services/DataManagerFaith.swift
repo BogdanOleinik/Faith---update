@@ -5,7 +5,7 @@
 //  Created by Олейник Богдан on 07.02.2022.
 //
 
-class DataManagerMain {
+struct DataManagerMain {
     
     static let shared = DataManagerMain()
     
@@ -23,7 +23,7 @@ class DataManagerMain {
     private init() {}
 }
 
-class DataManagerMorning {
+struct DataManagerMorning {
     
     static let shared = DataManagerMorning()
     
@@ -36,7 +36,7 @@ class DataManagerMorning {
     private init() {}
 }
 
-class DataManagerEvening {
+struct DataManagerEvening {
     
     static let shared = DataManagerEvening()
     
@@ -63,7 +63,7 @@ class DataManagerMatrona {
 }
 
 
-class DataManagerKsenya {
+struct DataManagerKsenya {
     
     static let shared = DataManagerKsenya()
     
@@ -75,7 +75,7 @@ class DataManagerKsenya {
 }
 
 
-class DataManagerSergeyRadonejsky {
+struct DataManagerSergeyRadonejsky {
     
     static let shared = DataManagerSergeyRadonejsky()
     
@@ -86,7 +86,7 @@ class DataManagerSergeyRadonejsky {
 }
 
 
-class DataManagerChudotvorets {
+struct DataManagerChudotvorets {
     
     static let shared = DataManagerChudotvorets()
     
@@ -99,7 +99,7 @@ class DataManagerChudotvorets {
 }
 
 
-class DataManagerBogoroditsya {
+struct DataManagerBogoroditsya {
     
     static let shared = DataManagerBogoroditsya()
     
