@@ -27,7 +27,9 @@ class HolidaysTableViewController: UITableViewController {
         
         cell.titleHoliday.text = holiday.title
         cell.dateHoliday.text = holiday.date
-        cell.imageHoliday.image = UIImage(named: holiday.title)
+        DispatchQueue.main.async {
+            cell.imageHoliday.image = UIImage(named: holiday.title)
+        }
         
         return cell
     }

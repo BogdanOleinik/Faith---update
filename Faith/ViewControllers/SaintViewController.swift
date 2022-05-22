@@ -25,7 +25,9 @@ class SaintViewController: UICollectionViewController {
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "faithCell", for: indexPath) as! SaintCell
-        cell.saintImage.image = saints[indexPath.item].image
+        DispatchQueue.main.async {
+            cell.saintImage.image = self.saints[indexPath.item].image
+        }
         
         return cell
     }
