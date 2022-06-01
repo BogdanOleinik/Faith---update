@@ -30,7 +30,6 @@ class HolidaysTableViewController: UITableViewController {
         DispatchQueue.main.async {
             cell.imageHoliday.image = UIImage(named: holiday.title)
         }
-        
         return cell
     }
     
