@@ -28,7 +28,6 @@ class SaintViewController: UICollectionViewController {
         DispatchQueue.main.async {
             cell.saintImage.image = self.saints[indexPath.item].image
         }
-        
         return cell
     }
     
